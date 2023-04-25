@@ -1,0 +1,41 @@
+.placeholder {
+  text-align: center;
+  font-style: italic;
+}
+
+.messages-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+
+  > div {
+    scroll-snap-align: start;
+    scroll-margin: 20px;
+
+    &::last-child {
+      scroll-snap-align: end;
+    }
+  }
+}
+
+.message {
+  margin: 20px 0;
+
+  &.user-message {
+    padding: 0 15px 0 25px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  &.assistant-message {
+    padding: 0 15px;
+    color: white;
+  }
+
+  pre {
+    margin: 0 -15px;
+  }
+
+  a {
+    color: #c2e7ff;
+    text-decoration: none;
+  }
+}

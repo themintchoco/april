@@ -1,0 +1,17 @@
+.settings {
+  margin: 20px 20px 0 20px;
+  height: 100vh;
+}
+
+.drag {
+  width: 100vw;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.icon {
+  background-image: url('./assets/icon.png');
+  background-size: contain;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>April uses your microphone to hear you. </string>
+  <key>NSSpeechRecognitionUsageDescription</key>
+  <string>April uses speech recognition to transcribe your voice into text. </string>
+  <key>NSCalendarsUsageDescription</key>
+  <string>April accesses your calendar to help you search and save events. </string>
+  <key>NSRemindersUsageDescription</key>
+  <string>April accesses your reminders to help you search and save reminders. </string>
+  <key>NSContactsUsageDescription</key>
+  <string>April accesses your contacts to help you call, text, or send emails to your contacts. </string>
+</dict>
+</plist>

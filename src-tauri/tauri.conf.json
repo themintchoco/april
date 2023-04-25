@@ -1,0 +1,83 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "April",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "dialog": {
+        "open": true
+      },
+      "fs": {
+        "createDir": true,
+        "readDir": true,
+        "readFile": true,
+        "writeFile": true,
+        "scope": ["$APPCONFIG", "$APPCONFIG/*"]
+      },
+      "http": {
+        "request": true,
+        "scope": ["http://**", "https://**"]
+      },
+      "os": {
+        "all": true
+      },
+      "path": {
+        "all": true
+      },
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "setSize": true,
+        "startDragging": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "sh.sheeee.april-client",
+      "targets": "all"
+    },
+    "macOSPrivateApi": true,
+    "security": {
+      "csp": null
+    },
+    "systemTray": {
+      "iconPath": "icons/tray-icon.png",
+      "menuOnLeftClick": false
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "label": "main",
+        "acceptFirstMouse": true,
+        "fullscreen": false,
+        "transparent": true,
+        "resizable": false,
+        "decorations": false,
+        "alwaysOnTop": true,
+        "title": "April",
+        "width": 400,
+        "height": 190
+      }
+    ]
+  }
+}
